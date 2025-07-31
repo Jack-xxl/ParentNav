@@ -4,7 +4,7 @@ import Home from './pages/Home.vue';
 import Assessment from './pages/Assessment.vue';
 import Result from './pages/Result.vue';
 import PaidResult from './pages/PaidResult.vue';
-import PaidUpgradeInfo from './pages/PaidUpgradeInfo.vue';
+import PaidUpgradeInfo from './pages/paidUpgradeInfo.vue';
 
 // 付费测评相关引入
 import PaidAssessmentFull from './pages/PaidAssessmentFull.vue';
