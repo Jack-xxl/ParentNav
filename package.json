@@ -2,7 +2,10 @@
   "name": "parentnavai-assessment",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
   },
   "dependencies": {
     "axios": "^1.10.0",
