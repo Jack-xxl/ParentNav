@@ -1,1622 +1,362 @@
 [
   {
-    "id": "q1",
-    "text": "在AI时代，您认为“成人”最重要的核心素质是什么？为什么？",
+    "id": "Q1",
+    "text": "当孩子在某一方面明显擅长，但不符合主流评价标准时，您更可能的反应是：",
     "options": [
-      {
-        "label": "具备情绪管理能力和基本责任感",
-        "score": 4
-      },
-      {
-        "label": "成绩优异、听话懂事最重要",
-        "score": 1
-      },
-      {
-        "label": "拥有独立思考、自我认知与社会责任感",
-        "score": 5
-      },
-      {
-        "label": "能考上好大学、找到稳定工作",
-        "score": 2
-      },
-      {
-        "label": "基本能遵守社会规则和道德规范",
-        "score": 3
-      }
+      { "label": "A. 认可但暂不投入太多资源", "score": 1 },
+      { "label": "B. 先把成绩稳定住再说", "score": 2 },
+      { "label": "C. 主动为这项优势寻找发展空间", "score": 4 },
+      { "label": "D. 观察一段时间再决定", "score": 3 }
     ],
-    "dimension": "成人"
+    "dimension": "成为自己",
+    "reverse": false
   },
   {
-    "id": "q2",
-    "text": "您是否认同“先成人后成才”的观点？请说明理由。",
+    "id": "Q2",
+    "text": "当您答应孩子一件事却临时遇到困难，通常会：",
     "options": [
-      {
-        "label": "基本认同，但希望两者同步发展",
-        "score": 3
-      },
-      {
-        "label": "完全认同，并会优先培养孩子的品格",
-        "score": 5
-      },
-      {
-        "label": "不认同，只要孩子聪明能干就行",
-        "score": 1
-      },
-      {
-        "label": "高度认同，认为成人是成才的基础",
-        "score": 4
-      },
-      {
-        "label": "有点认同，但更看重孩子的竞争力",
-        "score": 2
-      }
+      { "label": "A. 向孩子说明原因并道歉", "score": 3 },
+      { "label": "B. 找理由推掉", "score": 1 },
+      { "label": "C. 想办法兑现承诺", "score": 4 },
+      { "label": "D. 尽量补偿但不解释", "score": 2 }
     ],
-    "dimension": "成人"
+    "dimension": "家庭责任",
+    "reverse": false
   },
   {
-    "id": "q3",
-    "text": "当孩子表达不同意见时，您的第一反应通常是？",
+    "id": "Q3",
+    "text": "当孩子表达与您不同的观点时，您更常见的做法是：",
     "options": [
-      {
-        "label": "听完后耐心解释",
-        "score": 2
-      },
-      {
-        "label": "认真思考他的观点是否有道理",
-        "score": 4
-      },
-      {
-        "label": "鼓励他说出自己的想法",
-        "score": 5
-      },
-      {
-        "label": "批评他不懂事",
-        "score": 3
-      },
-      {
-        "label": "马上纠正他",
-        "score": 1
-      }
+      { "label": "A. 引导他说明理由", "score": 3 },
+      { "label": "B. 立即纠正", "score": 1 },
+      { "label": "C. 鼓励他完整表达并讨论", "score": 4 },
+      { "label": "D. 听听但坚持自己立场", "score": 2 }
     ],
-    "dimension": "成人"
+    "dimension": "成为自己",
+    "reverse": false
   },
   {
-    "id": "q4",
-    "text": "您会让孩子自己处理学校作业、生活琐事吗？",
+    "id": "Q4",
+    "text": "您是否会主动思考：AI 和技术变化会不会影响孩子未来的工作？",
     "options": [
-      {
-        "label": "几乎不会，怕耽误学习",
-        "score": 1
-      },
-      {
-        "label": "经常让他自己处理",
-        "score": 4
-      },
-      {
-        "label": "看情况而定",
-        "score": 3
-      },
-      {
-        "label": "完全放手不管",
-        "score": 5
-      },
-      {
-        "label": "有时候会，但大多数时候我帮他",
-        "score": 2
-      }
+      { "label": "A. 已有意识为孩子做能力准备", "score": 4 },
+      { "label": "B. 偶尔担心但不清楚对策", "score": 2 },
+      { "label": "C. 几乎不考虑", "score": 1 },
+      { "label": "D. 已开始关注哪些能力不易被替代", "score": 3 }
     ],
-    "dimension": "成人"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q5",
-    "text": "孩子犯错时，您通常的做法是？",
+    "id": "Q5",
+    "text": "当孩子遇到挫折或失败时，您通常会：",
     "options": [
-      {
-        "label": "忽略这件事",
-        "score": 3
-      },
-      {
-        "label": "分析原因并制定改进计划",
-        "score": 4
-      },
-      {
-        "label": "和孩子一起分析并给予鼓励",
-        "score": 5
-      },
-      {
-        "label": "直接批评甚至惩罚",
-        "score": 1
-      },
-      {
-        "label": "责备他不够努力",
-        "score": 2
-      }
+      { "label": "A. 帮他分析原因", "score": 3 },
+      { "label": "B. 要求他振作，别想太多", "score": 2 },
+      { "label": "C. 陪他一起复盘并调整方法", "score": 4 },
+      { "label": "D. 告诉他失败很正常", "score": 1 }
     ],
-    "dimension": "成人"
+    "dimension": "幸福力",
+    "reverse": false
   },
   {
-    "id": "q6",
-    "text": "您是否愿意让孩子在安全范围内试错？",
+    "id": "Q6",
+    "text": "您是否认同“先成人，后成才”的理念？",
     "options": [
-      {
-        "label": "多数情况下允许",
-        "score": 4
-      },
-      {
-        "label": "只要不影响成绩就可以",
-        "score": 2
-      },
-      {
-        "label": "非常支持孩子试错",
-        "score": 5
-      },
-      {
-        "label": "偶尔允许",
-        "score": 3
-      },
-      {
-        "label": "从不允许孩子犯错",
-        "score": 1
-      }
+      { "label": "A. 理解但执行很难", "score": 2 },
+      { "label": "B. 非常认同，并优先实践", "score": 4 },
+      { "label": "C. 不认同，成绩更重要", "score": 1 },
+      { "label": "D. 认同，并尝试平衡", "score": 3 }
     ],
-    "dimension": "成人"
+    "dimension": "成人",
+    "reverse": false
   },
   {
-    "id": "q7",
-    "text": "当孩子遇到人际冲突时，您会怎么做？",
+    "id": "Q7",
+    "text": "在家庭中遇到分歧或问题时，通常是：",
     "options": [
-      {
-        "label": "教训别人家的孩子",
-        "score": 1
-      },
-      {
-        "label": "问清原因后引导他自己解决",
-        "score": 4
-      },
-      {
-        "label": "鼓励孩子尝试沟通",
-        "score": 5
-      },
-      {
-        "label": "找老师解决",
-        "score": 2
-      },
-      {
-        "label": "让孩子自己处理",
-        "score": 3
-      }
+      { "label": "A. 讨论后由大人定", "score": 2 },
+      { "label": "B. 父母直接决定", "score": 1 },
+      { "label": "C. 共同讨论并形成共识", "score": 4 },
+      { "label": "D. 谁声音大听谁的", "score": 0 }
     ],
-    "dimension": "成人"
+    "dimension": "家庭责任",
+    "reverse": false
   },
   {
-    "id": "q8",
-    "text": "您如何看待孩子与不同性格的同学交往？",
+    "id": "Q8",
+    "text": "如果孩子未来选择的道路不是“名校 + 稳定单位”，您会：",
     "options": [
-      {
-        "label": "支持孩子自由选择朋友",
-        "score": 4
-      },
-      {
-        "label": "希望孩子只跟成绩好的交往",
-        "score": 2
-      },
-      {
-        "label": "鼓励孩子与不同类型的人交流",
-        "score": 5
-      },
-      {
-        "label": "无所谓",
-        "score": 3
-      },
-      {
-        "label": "反对孩子跟“不乖”的孩子玩",
-        "score": 1
-      }
+      { "label": "A. 只要方向清晰就支持", "score": 4 },
+      { "label": "B. 内心焦虑但接受", "score": 2 },
+      { "label": "C. 强烈反对", "score": 1 },
+      { "label": "D. 只要能谋生就行", "score": 3 }
     ],
-    "dimension": "成人"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q9",
-    "text": "您是否会通过角色扮演等方式训练孩子的同理心？",
+    "id": "Q9",
+    "text": "您是否愿意承认自己在育儿中的失误？",
     "options": [
-      {
-        "label": "偶尔做过一次两次",
-        "score": 2
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "非常重视并长期坚持",
-        "score": 5
-      },
-      {
-        "label": "从没想过这么做",
-        "score": 1
-      },
-      {
-        "label": "经常会有意识地引导",
-        "score": 4
-      }
+      { "label": "A. 会seriously 会主动修正并示范给孩子", "score": 4 },
+      { "label": "B. 偶尔", "score": 2 },
+      { "label": "C. 经常反思", "score": 3 },
+      { "label": "D. 很少", "score": 1 }
     ],
-    "dimension": "成人"
+    "dimension": "成人",
+    "reverse": false
   },
   {
-    "id": "q10",
-    "text": "您会鼓励孩子参加小组项目或集体活动吗？",
+    "id": "Q10",
+    "text": "当孩子情绪激动时，您通常：",
     "options": [
-      {
-        "label": "很少参加，怕影响学习",
-        "score": 1
-      },
-      {
-        "label": "如果老师安排就参加",
-        "score": 2
-      },
-      {
-        "label": "非常支持",
-        "score": 5
-      },
-      {
-        "label": "偶尔鼓励",
-        "score": 3
-      },
-      {
-        "label": "经常主动参与",
-        "score": 4
-      }
+      { "label": "A. 帮助他理解和表达情绪", "score": 4 },
+      { "label": "B. 要求立刻冷静", "score": 2 },
+      { "label": "C. 等他平复再沟通", "score": 3 },
+      { "label": "D. 先制止情绪", "score": 1 }
     ],
-    "dimension": "成人"
+    "dimension": "幸福力",
+    "reverse": false
   },
   {
-    "id": "q11",
-    "text": "您会带孩子参观博物馆、科技馆、公司等场所，拓展视野吗？",
+    "id": "Q11",
+    "text": "您为孩子选择学习内容时，更看重：",
     "options": [
-      {
-        "label": "偶尔去",
-        "score": 3
-      },
-      {
-        "label": "经常去",
-        "score": 4
-      },
-      {
-        "label": "从没去过",
-        "score": 1
-      },
-      {
-        "label": "非常频繁且有规划",
-        "score": 5
-      },
-      {
-        "label": "很少去",
-        "score": 2
-      }
+      { "label": "A. 是否符合天赋与长期发展", "score": 4 },
+      { "label": "B. 是否应试", "score": 1 },
+      { "label": "C. 是否能提升能力", "score": 3 },
+      { "label": "D. 是否热门", "score": 2 }
     ],
-    "dimension": "成人"
+    "dimension": "成才",
+    "reverse": false
   },
   {
-    "id": "q12",
-    "text": "您会陪孩子一起了解各种职业的特点吗？",
+    "id": "Q12",
+    "text": "当孩子犯错需要承担后果时，您通常：",
     "options": [
-      {
-        "label": "从没想过",
-        "score": 1
-      },
-      {
-        "label": "偶尔聊过",
-        "score": 2
-      },
-      {
-        "label": "有时会讲一些职业故事",
-        "score": 3
-      },
-      {
-        "label": "非常重视并持续进行",
-        "score": 5
-      },
-      {
-        "label": "经常主动引导",
-        "score": 4
-      }
+      { "label": "A. 让他承担一部分", "score": 3 },
+      { "label": "B. 帮他解决", "score": 1 },
+      { "label": "C. 让他承担并复盘学习", "score": 4 },
+      { "label": "D. 训斥一顿", "score": 2 }
     ],
-    "dimension": "成人"
+    "dimension": "家庭责任",
+    "reverse": false
   },
   {
-    "id": "q13",
-    "text": "您会鼓励孩子思考“长大后想做什么”这样的问题吗？",
+    "id": "Q13",
+    "text": "关于孩子未来的职业方向，您目前的状态是：",
     "options": [
-      {
-        "label": "有时认真讨论",
-        "score": 3
-      },
-      {
-        "label": "经常引导深入思考",
-        "score": 4
-      },
-      {
-        "label": "非常重视并设定目标",
-        "score": 5
-      },
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      },
-      {
-        "label": "从不引导",
-        "score": 1
-      }
+      { "label": "A. 已结合天赋进行规划", "score": 4 },
+      { "label": "B. 在逐步探索", "score": 3 },
+      { "label": "C. 没认真想过", "score": 1 },
+      { "label": "D. 有模糊方向", "score": 2 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q14",
-    "text": "您会根据孩子的兴趣推荐相关书籍、视频或课程吗？",
+    "id": "Q14",
+    "text": "当家庭事务需要决定时，孩子是否有参与感？",
     "options": [
-      {
-        "label": "有时会找资源",
-        "score": 3
-      },
-      {
-        "label": "经常提供资源支持",
-        "score": 4
-      },
-      {
-        "label": "从不这样做",
-        "score": 1
-      },
-      {
-        "label": "非常重视并长期投入",
-        "score": 5
-      },
-      {
-        "label": "偶尔推荐",
-        "score": 2
-      }
+      { "label": "A. 部分参与", "score": 3 },
+      { "label": "B. 从不", "score": 1 },
+      { "label": "C. 经常参与", "score": 4 },
+      { "label": "D. 偶尔听听", "score": 2 }
     ],
-    "dimension": "成才"
+    "dimension": "家庭责任",
+    "reverse": false
   },
   {
-    "id": "q15",
-    "text": "您会反思自己的教育方式是否限制了孩子的成长空间吗？",
+    "id": "Q15",
+    "text": "您是否担心：孩子将来“学历有了，但找不到真正的出路”？",
     "options": [
-      {
-        "label": "偶尔会想一想",
-        "score": 2
-      },
-      {
-        "label": "经常反思并改进",
-        "score": 4
-      },
-      {
-        "label": "非常重视并不断学习",
-        "score": 5
-      },
-      {
-        "label": "有时会调整做法",
-        "score": 3
-      },
-      {
-        "label": "从没反思过",
-        "score": 1
-      }
+      { "label": "A. 已开始提前规划", "score": 4 },
+      { "label": "B. 偶尔担心", "score": 2 },
+      { "label": "C. 经常思考", "score": 3 },
+      { "label": "D. 没想过", "score": 1 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q16",
-    "text": "您是否意识到过度干预孩子的生活可能会影响他的独立性？",
+    "id": "Q16",
+    "text": "当孩子需要独立完成任务时，您会：",
     "options": [
-      {
-        "label": "有点意识到",
-        "score": 2
-      },
-      {
-        "label": "非常清楚并减少干预",
-        "score": 4
-      },
-      {
-        "label": "完全没意识到",
-        "score": 1
-      },
-      {
-        "label": "非常清楚并积极放手",
-        "score": 5
-      },
-      {
-        "label": "有一定认识",
-        "score": 3
-      }
+      { "label": "A. 在旁边提醒", "score": 2 },
+      { "label": "B. 完全放手并复盘", "score": 4 },
+      { "label": "C. 直接代劳", "score": 1 },
+      { "label": "D. 一边做一边教", "score": 3 }
     ],
-    "dimension": "成才"
+    "dimension": "成才",
+    "reverse": false
   },
   {
-    "id": "q17",
-    "text": "您知道“一切都替孩子安排好”可能会削弱他的责任感吗？",
+    "id": "Q17",
+    "text": "您认为“成功”的核心更接近哪一种？",
     "options": [
-      {
-        "label": "明白并有意避免",
-        "score": 4
-      },
-      {
-        "label": "不知道",
-        "score": 1
-      },
-      {
-        "label": "有所耳闻但不在意",
-        "score": 2
-      },
-      {
-        "label": "非常明白并主动放手",
-        "score": 5
-      },
-      {
-        "label": "有些了解",
-        "score": 3
-      }
+      { "label": "A. 能持续成长", "score": 4 },
+      { "label": "B. 稳定", "score": 2 },
+      { "label": "C. 能创造价值", "score": 3 },
+      { "label": "D. 安全", "score": 1 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q18",
-    "text": "您愿意接受不同的教育理念，并做出改变吗？",
+    "id": "Q18",
+    "text": "您是否愿意陪孩子一起探索兴趣或项目？",
     "options": [
-      {
-        "label": "愿意学习并实践",
-        "score": 4
-      },
-      {
-        "label": "完全不愿意",
-        "score": 1
-      },
-      {
-        "label": "有时会尝试新方法",
-        "score": 3
-      },
-      {
-        "label": "非常愿意并主动更新观念",
-        "score": 5
-      },
-      {
-        "label": "有点愿意但不确定",
-        "score": 2
-      }
+      { "label": "A. 比较愿意", "score": 3 },
+      { "label": "B. 很少", "score": 1 },
+      { "label": "C. 会持续投入", "score": 4 },
+      { "label": "D. 偶尔", "score": 2 }
     ],
-    "dimension": "成才"
+    "dimension": "成为自己",
+    "reverse": false
   },
   {
-    "id": "q19",
-    "text": "我理解“放手”并不等于“放任”。",
+    "id": "Q19",
+    "text": "当孩子对未来感到迷茫时，您通常：",
     "options": [
-      {
-        "label": "有点理解但做不到",
-        "score": 2
-      },
-      {
-        "label": "不理解",
-        "score": 1
-      },
-      {
-        "label": "非常理解并实践得当",
-        "score": 5
-      },
-      {
-        "label": "基本能做到平衡",
-        "score": 4
-      },
-      {
-        "label": "有些了解",
-        "score": 3
-      }
+      { "label": "A. 用系统方式一起探索", "score": 4 },
+      { "label": "B. 要求先别想", "score": 1 },
+      { "label": "C. 引导多接触", "score": 3 },
+      { "label": "D. 给出自己的经验", "score": 2 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q20",
-    "text": "我希望我的孩子将来能成为一个有主见、懂合作、能解决问题的人。",
+    "id": "Q20",
+    "text": "您是否愿意调整自己的观念来适应时代变化？",
     "options": [
-      {
-        "label": "更关心学习成绩",
-        "score": 2
-      },
-      {
-        "label": "正在努力培养这些品质",
-        "score": 4
-      },
-      {
-        "label": "非常重视并长期规划",
-        "score": 5
-      },
-      {
-        "label": "不关心这些",
-        "score": 1
-      },
-      {
-        "label": "希望如此但没具体行动",
-        "score": 3
-      }
+      { "label": "A. 持续更新认知", "score": 4 },
+      { "label": "B. 视情况而定", "score": 2 },
+      { "label": "C. 不太愿意", "score": 1 },
+      { "label": "D. 愿意学习", "score": 3 }
     ],
-    "dimension": "成才"
+    "dimension": "成人",
+    "reverse": false
   },
   {
-    "id": "q21",
-    "text": "我能在孩子犯错时保持冷静，而不是立刻发火。",
+    "id": "Q21",
+    "text": "您是否会刻意培养孩子不容易被 AI 替代的能力？",
     "options": [
-      {
-        "label": "一般能",
-        "score": 3
-      },
-      {
-        "label": "总是能",
-        "score": 5
-      },
-      {
-        "label": "完全不能",
-        "score": 1
-      },
-      {
-        "label": "有时能",
-        "score": 2
-      },
-      {
-        "label": "大多数时候能",
-        "score": 4
-      }
+      { "label": "A. 已在行动中", "score": 4 },
+      { "label": "B. 听说过", "score": 1 },
+      { "label": "C. 有初步意识", "score": 2 },
+      { "label": "D. 没考虑过", "score": 0 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q22",
-    "text": "当我心情不好时，我会尽量避免把情绪带回家影响孩子。",
+    "id": "Q22",
+    "text": "当家庭规则需要制定时，通常：",
     "options": [
-      {
-        "label": "一般不会",
-        "score": 3
-      },
-      {
-        "label": "有时会",
-        "score": 2
-      },
-      {
-        "label": "从不带回家",
-        "score": 5
-      },
-      {
-        "label": "很少带回家",
-        "score": 4
-      },
-      {
-        "label": "经常带回家",
-        "score": 1
-      }
+      { "label": "A. 共同制定并遵守", "score": 4 },
+      { "label": "B. 父母说了算", "score": 1 },
+      { "label": "C. 商量后决定", "score": 3 },
+      { "label": "D. 临时决定", "score": 2 }
     ],
-    "dimension": "成才"
+    "dimension": "家庭责任",
+    "reverse": false
   },
   {
-    "id": "q23",
-    "text": "即使孩子顶嘴或反驳我，我也能心平气和地沟通。",
+    "id": "Q23",
+    "text": "您是否会让孩子参与真实的社会体验（项目、实践等）？",
     "options": [
-      {
-        "label": "容易生气",
-        "score": 1
-      },
-      {
-        "label": "大多数时候能控制",
-        "score": 4
-      },
-      {
-        "label": "总是能控制",
-        "score": 5
-      },
-      {
-        "label": "有时能控制",
-        "score": 2
-      },
-      {
-        "label": "一般能控制",
-        "score": 3
-      }
+      { "label": "A. 系统性安排", "score": 4 },
+      { "label": "B. 偶尔", "score": 2 },
+      { "label": "C. 有意识安排", "score": 3 },
+      { "label": "D. 几乎没有", "score": 1 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q24",
-    "text": "我不会因为工作压力而对孩子态度恶劣。",
+    "id": "Q24",
+    "text": "您更倾向让孩子进入：",
     "options": [
-      {
-        "label": "一般不会",
-        "score": 3
-      },
-      {
-        "label": "经常这样",
-        "score": 1
-      },
-      {
-        "label": "有时会",
-        "score": 2
-      },
-      {
-        "label": "从不发生",
-        "score": 5
-      },
-      {
-        "label": "很少发生",
-        "score": 4
-      }
+      { "label": "A. 熟悉但竞争激烈的行业", "score": 2 },
+      { "label": "B. 天赋匹配的新兴行业", "score": 4 },
+      { "label": "C. 传统稳定行业", "score": 1 },
+      { "label": "D. 新旧结合行业", "score": 3 }
     ],
-    "dimension": "成才"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q25",
-    "text": "我会主动反思自己的情绪状态，并调整与孩子的互动方式。",
+    "id": "Q25",
+    "text": "当孩子遇到困难想放弃时，您会：",
     "options": [
-      {
-        "label": "偶尔反思",
-        "score": 2
-      },
-      {
-        "label": "经常反思",
-        "score": 4
-      },
-      {
-        "label": "非常重视并记录总结",
-        "score": 5
-      },
-      {
-        "label": "从不反思",
-        "score": 1
-      },
-      {
-        "label": "有时反思",
-        "score": 3
-      }
+      { "label": "A. 重新调整路径", "score": 4 },
+      { "label": "B. 允许放弃", "score": 1 },
+      { "label": "C. 要求坚持", "score": 2 },
+      { "label": "D. 分析利弊", "score": 3 }
     ],
-    "dimension": "成为自己"
+    "dimension": "幸福力",
+    "reverse": false
   },
   {
-    "id": "q26",
-    "text": "我很少因为焦虑、愤怒而对孩子说出伤害性的话。",
+    "id": "Q26",
+    "text": "您是否认为家庭氛围会深刻影响孩子一生？",
     "options": [
-      {
-        "label": "经常说",
-        "score": 1
-      },
-      {
-        "label": "有时会说",
-        "score": 2
-      },
-      {
-        "label": "一般不会",
-        "score": 3
-      },
-      {
-        "label": "从不说",
-        "score": 5
-      },
-      {
-        "label": "很少说",
-        "score": 4
-      }
+      { "label": "A. 决定性因素之一", "score": 4 },
+      { "label": "B. 有一定影响", "score": 3 },
+      { "label": "C. 不太相关", "score": 1 },
+      { "label": "D. 很重要", "score": 2 }
     ],
-    "dimension": "成为自己"
+    "dimension": "幸福力",
+    "reverse": false
   },
   {
-    "id": "q27",
-    "text": "我会让孩子参与家庭中的小决策，比如周末去哪里玩。",
+    "id": "Q27",
+    "text": "当孩子提出与您不同的价值判断时，您通常：",
     "options": [
-      {
-        "label": "偶尔让",
-        "score": 2
-      },
-      {
-        "label": "经常让孩子参与",
-        "score": 4
-      },
-      {
-        "label": "从不让",
-        "score": 1
-      },
-      {
-        "label": "非常重视并主动邀请",
-        "score": 5
-      },
-      {
-        "label": "有时会让",
-        "score": 3
-      }
+      { "label": "A. 探讨", "score": 4 },
+      { "label": "B. 否定", "score": 1 },
+      { "label": "C. 鼓励形成独立判断", "score": 3 },
+      { "label": "D. 解释", "score": 2 }
     ],
-    "dimension": "成为自己"
+    "dimension": "成为自己",
+    "reverse": false
   },
   {
-    "id": "q28",
-    "text": "我相信孩子有能力解决一些基本的生活问题。",
+    "id": "Q28",
+    "text": "您是否愿意为孩子的长期发展牺牲短期“安全感”？",
     "options": [
-      {
-        "label": "有点怀疑",
-        "score": 2
-      },
-      {
-        "label": "相信孩子可以做到",
-        "score": 4
-      },
-      {
-        "label": "完全不相信",
-        "score": 1
-      },
-      {
-        "label": "非常相信并鼓励实践",
-        "score": 5
-      },
-      {
-        "label": "有一定信心",
-        "score": 3
-      }
+      { "label": "A. 视情况", "score": 2 },
+      { "label": "B. 愿意", "score": 4 },
+      { "label": "C. 很难", "score": 1 },
+      { "label": "D. 不愿意", "score": 0 }
     ],
-    "dimension": "成为自己"
+    "dimension": "成人",
+    "reverse": false
   },
   {
-    "id": "q29",
-    "text": "我会鼓励孩子为自己的选择承担责任。",
+    "id": "Q29",
+    "text": "您是否已经意识到：仅靠学业，已不足以支撑未来谋生？",
     "options": [
-      {
-        "label": "偶尔提及",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "经常鼓励并落实",
-        "score": 4
-      },
-      {
-        "label": "有时会要求",
-        "score": 3
-      },
-      {
-        "label": "非常重视并设立奖惩机制",
-        "score": 5
-      }
+      { "label": "A. 已据此调整策略", "score": 4 },
+      { "label": "B. 部分认同", "score": 2 },
+      { "label": "C. 不认同", "score": 1 },
+      { "label": "D. 认同", "score": 3 }
     ],
-    "dimension": "成为自己"
+    "dimension": "谋生手段",
+    "reverse": false
   },
   {
-    "id": "q30",
-    "text": "我会鼓励孩子制定短期目标并追踪完成情况。",
+    "id": "Q30",
+    "text": "当您设想孩子 20 年后的人生状态，更接近哪一种？",
     "options": [
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "从不这样做",
-        "score": 1
-      },
-      {
-        "label": "经常引导并监督",
-        "score": 4
-      },
-      {
-        "label": "非常重视并长期实践",
-        "score": 5
-      },
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      }
+      { "label": "A. 有价值、有选择权", "score": 4 },
+      { "label": "B. 生活安稳", "score": 2 },
+      { "label": "C. 稳定不出错", "score": 1 },
+      { "label": "D. 有成长空间", "score": 3 }
     ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q31",
-    "text": "您是否愿意让孩子参与家务劳动或照顾他人？",
-    "options": [
-      {
-        "label": "只要不影响学习就可以",
-        "score": 2
-      },
-      {
-        "label": "完全不愿意",
-        "score": 1
-      },
-      {
-        "label": "非常支持并制定计划",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励孩子参与",
-        "score": 4
-      },
-      {
-        "label": "有时会让他帮忙",
-        "score": 3
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q32",
-    "text": "您是否经常跟孩子讨论“什么是对的，什么是错的”？",
-    "options": [
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      },
-      {
-        "label": "从不讨论",
-        "score": 1
-      },
-      {
-        "label": "非常重视并持续进行",
-        "score": 5
-      },
-      {
-        "label": "有时会深入交流",
-        "score": 3
-      },
-      {
-        "label": "经常主动引导",
-        "score": 4
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q33",
-    "text": "您是否认为“做个好人”比“赚很多钱”更重要？",
-    "options": [
-      {
-        "label": "不确定",
-        "score": 3
-      },
-      {
-        "label": "不认同",
-        "score": 1
-      },
-      {
-        "label": "非常认同",
-        "score": 5
-      },
-      {
-        "label": "比较认同",
-        "score": 4
-      },
-      {
-        "label": "有点认同",
-        "score": 2
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q34",
-    "text": "您是否认为孩子应该学会“忍让”和“包容”？",
-    "options": [
-      {
-        "label": "不认同",
-        "score": 1
-      },
-      {
-        "label": "比较认同",
-        "score": 4
-      },
-      {
-        "label": "有点认同",
-        "score": 2
-      },
-      {
-        "label": "非常认同",
-        "score": 5
-      },
-      {
-        "label": "一般",
-        "score": 3
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q35",
-    "text": "您是否认为孩子需要懂得感恩和回报他人？",
-    "options": [
-      {
-        "label": "不认同",
-        "score": 1
-      },
-      {
-        "label": "有点认同",
-        "score": 2
-      },
-      {
-        "label": "非常认同",
-        "score": 5
-      },
-      {
-        "label": "一般",
-        "score": 3
-      },
-      {
-        "label": "比较认同",
-        "score": 4
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q36",
-    "text": "您是否愿意让孩子参与家务劳动或照顾他人？",
-    "options": [
-      {
-        "label": "只要不影响学习就可以",
-        "score": 2
-      },
-      {
-        "label": "完全不愿意",
-        "score": 1
-      },
-      {
-        "label": "非常支持并制定计划",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励孩子参与",
-        "score": 4
-      },
-      {
-        "label": "有时会让他帮忙",
-        "score": 3
-      }
-    ],
-    "dimension": "成为自己"
-  },
-  {
-    "id": "q37",
-    "text": "您是否会通过角色扮演等方式训练孩子的同理心？",
-    "options": [
-      {
-        "label": "从没想过这么做",
-        "score": 1
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "偶尔做过一次两次",
-        "score": 2
-      },
-      {
-        "label": "非常重视并长期坚持",
-        "score": 5
-      },
-      {
-        "label": "经常会有意识地引导",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q38",
-    "text": "您是否愿意承认自己在育儿过程中的错误？",
-    "options": [
-      {
-        "label": "偶尔承认",
-        "score": 2
-      },
-      {
-        "label": "有时会反思",
-        "score": 3
-      },
-      {
-        "label": "非常重视并主动改正",
-        "score": 5
-      },
-      {
-        "label": "从不承认",
-        "score": 1
-      },
-      {
-        "label": "经常反思并道歉",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q39",
-    "text": "您是否愿意鼓励孩子发表与您不同的观点？",
-    "options": [
-      {
-        "label": "偶尔鼓励",
-        "score": 2
-      },
-      {
-        "label": "非常重视并主动鼓励",
-        "score": 5
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q40",
-    "text": "您是否愿意让孩子参与家庭事务决策？如周末去哪里玩、晚餐吃什么等？",
-    "options": [
-      {
-        "label": "从不让孩子参与",
-        "score": 1
-      },
-      {
-        "label": "偶尔让孩子提建议",
-        "score": 2
-      },
-      {
-        "label": "非常鼓励孩子主动提出想法",
-        "score": 5
-      },
-      {
-        "label": "有时会让他做决定",
-        "score": 3
-      },
-      {
-        "label": "经常让孩子参与",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q41",
-    "text": "您是否愿意为孩子提供失败后的心理支持？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "总是会支持",
-        "score": 5
-      },
-      {
-        "label": "有时会安慰",
-        "score": 3
-      },
-      {
-        "label": "经常会支持",
-        "score": 4
-      },
-      {
-        "label": "从不",
-        "score": 1
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q42",
-    "text": "您是否愿意与孩子一起回顾过去的行为并总结经验？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "总是会做",
-        "score": 5
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "经常会做",
-        "score": 4
-      },
-      {
-        "label": "从不",
-        "score": 1
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q43",
-    "text": "您是否愿意让孩子尝试具有一定挑战的任务？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "非常支持并提供指导",
-        "score": 5
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      },
-      {
-        "label": "有时会鼓励",
-        "score": 3
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q44",
-    "text": "您是否愿意花时间陪孩子一起探索兴趣领域？",
-    "options": [
-      {
-        "label": "偶尔陪",
-        "score": 2
-      },
-      {
-        "label": "从不陪",
-        "score": 1
-      },
-      {
-        "label": "有时陪",
-        "score": 3
-      },
-      {
-        "label": "非常重视并长期投入",
-        "score": 5
-      },
-      {
-        "label": "经常陪",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q45",
-    "text": "您是否愿意让孩子参与家庭财务规划，如零用钱使用、小额购物等？",
-    "options": [
-      {
-        "label": "偶尔参与",
-        "score": 2
-      },
-      {
-        "label": "从不参与",
-        "score": 1
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并长期实践",
-        "score": 5
-      },
-      {
-        "label": "经常参与",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q46",
-    "text": "您是否愿意鼓励孩子与陌生人交流？如问路、点餐等？",
-    "options": [
-      {
-        "label": "偶尔鼓励",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并创造机会",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q47",
-    "text": "您是否愿意让孩子参与志愿服务或公益活动？",
-    "options": [
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会带孩子参加",
-        "score": 3
-      },
-      {
-        "label": "非常重视并长期参与",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励参与",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q48",
-    "text": "您是否愿意让孩子尝试不同的学习方式，如项目式学习、自主研究等？",
-    "options": [
-      {
-        "label": "偶尔愿意",
-        "score": 2
-      },
-      {
-        "label": "完全不愿意",
-        "score": 1
-      },
-      {
-        "label": "有时会尝试",
-        "score": 3
-      },
-      {
-        "label": "非常愿意并积极引导",
-        "score": 5
-      },
-      {
-        "label": "经常愿意",
-        "score": 4
-      }
-    ],
-    "dimension": "幸福力"
-  },
-  {
-    "id": "q49",
-    "text": "您是否愿意鼓励孩子表达自己的情绪和感受？",
-    "options": [
-      {
-        "label": "偶尔鼓励",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并主动培养",
-        "score": 5
-      },
-      {
-        "label": "经常引导",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q50",
-    "text": "您是否愿意让孩子参与家庭规则制定？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "总是会做",
-        "score": 5
-      },
-      {
-        "label": "经常会做",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q51",
-    "text": "您是否愿意鼓励孩子在公众场合表达自己的看法？",
-    "options": [
-      {
-        "label": "偶尔鼓励",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并主动训练",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q52",
-    "text": "您是否愿意鼓励孩子发表与您不同的观点？",
-    "options": [
-      {
-        "label": "偶尔鼓励",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并主动鼓励",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q53",
-    "text": "您是否愿意让孩子参与志愿服务或公益活动？",
-    "options": [
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会带孩子参加",
-        "score": 3
-      },
-      {
-        "label": "非常重视并长期参与",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励参与",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q54",
-    "text": "您是否愿意为孩子提供多种体验机会，即使它们与考试无关？",
-    "options": [
-      {
-        "label": "偶尔愿意",
-        "score": 2
-      },
-      {
-        "label": "完全不愿意",
-        "score": 1
-      },
-      {
-        "label": "有时会考虑",
-        "score": 3
-      },
-      {
-        "label": "非常愿意并积极寻找",
-        "score": 5
-      },
-      {
-        "label": "经常愿意",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q55",
-    "text": "您是否愿意让孩子尝试具有一定挑战的任务？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时会鼓励",
-        "score": 3
-      },
-      {
-        "label": "非常支持并提供指导",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q56",
-    "text": "您是否愿意与孩子一起回顾过去的行为并总结经验？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "总是会做",
-        "score": 5
-      },
-      {
-        "label": "经常会做",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q57",
-    "text": "您是否愿意鼓励孩子主动结识新朋友？",
-    "options": [
-      {
-        "label": "偶尔提一下",
-        "score": 2
-      },
-      {
-        "label": "从不鼓励",
-        "score": 1
-      },
-      {
-        "label": "有时会引导",
-        "score": 3
-      },
-      {
-        "label": "非常重视并创造机会",
-        "score": 5
-      },
-      {
-        "label": "经常鼓励",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q58",
-    "text": "您是否愿意鼓励孩子主动承担责任？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时",
-        "score": 3
-      },
-      {
-        "label": "总是",
-        "score": 5
-      },
-      {
-        "label": "经常",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q59",
-    "text": "您是否愿意与孩子一起制定家庭规则并遵守？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "总是会做",
-        "score": 5
-      },
-      {
-        "label": "经常会做",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
-  },
-  {
-    "id": "q60",
-    "text": "您是否愿意定期回顾自己的育儿方式并作出调整？",
-    "options": [
-      {
-        "label": "偶尔",
-        "score": 2
-      },
-      {
-        "label": "从不",
-        "score": 1
-      },
-      {
-        "label": "有时会做",
-        "score": 3
-      },
-      {
-        "label": "总是会做",
-        "score": 5
-      },
-      {
-        "label": "经常会做",
-        "score": 4
-      }
-    ],
-    "dimension": "家庭责任"
+    "dimension": "谋生手段",
+    "reverse": false
   }
 ]

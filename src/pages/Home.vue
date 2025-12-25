@@ -18,7 +18,7 @@
         <h2 style="color:var(--color-accent);font-size:1.4rem;font-weight:700;margin-bottom:0.7em;">为什么要做家长测评？</h2>
         <ul style="text-align:left;color:var(--color-text-secondary);font-size:1.08em;line-height:1.8;">
           <li>✔️ 发现育儿盲区，科学定位成长方向</li>
-          <li>✔️ 量化家长五大核心能力，精准提升</li>
+          <li>✔️ 量化家长六大核心能力，精准提升</li>
           <li>✔️ 获得个性化建议，助力家庭幸福</li>
           <li>✔️ 免费获取精美报告，随时查阅成长轨迹</li>
         </ul>

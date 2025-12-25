@@ -96,7 +96,7 @@
             <p class="muted">已完成 2 个 L1 认证</p >
           </div>
           <div class="price-item">
-            <div class="price-title">L3 高级共创教练</div>
+            <div class="price-title">L3 高级共创教练(只招收100名)</div>
             <div class="price">免费晋升</div>
             <p class="muted">3–6 个月实践考核达标</p >
           </div>
