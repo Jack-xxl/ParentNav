@@ -1,0 +1,464 @@
+[
+  {
+    "id": "Q1",
+    "text": "当孩子面临重要选择（如选专业、选兴趣班）时，您：",
+    "options": [
+      { "label": "A. 根据我的经验直接给建议", "score": 2 },
+      { "label": "B. 已经提前帮孩子研究好利弊和发展路径", "score": 4 },
+      { "label": "C. 尊重孩子选择，但我也不太懂", "score": 1 },
+      { "label": "D. 和孩子一起收集信息后讨论决定", "score": 3 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+  {
+    "id": "Q2",
+    "text": "您是否建立了让孩子愿意主动求助的家庭氛围？",
+    "options": [
+      { "label": "A. 有时会找我，看情况", "score": 2 },
+      { "label": "B. 孩子愿意分享，但我不一定能帮上忙", "score": 3 },
+      { "label": "C. 孩子遇到困难会第一时间找我商量", "score": 4 },
+      { "label": "D. 很少主动找我，多是我问出来的", "score": 1 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+  {
+    "id": "Q3",
+    "text": "过去一个月，您有几次\"放下手机/工作，全情投入陪伴孩子\"的时刻？",
+    "options": [
+      { "label": "A. 偶尔想起来会这样做", "score": 2 },
+      { "label": "B. 几乎每天都有", "score": 4 },
+      { "label": "C. 很少，通常是边做事边陪", "score": 1 },
+      { "label": "D. 每周2-3次", "score": 3 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+  {
+    "id": "Q4",
+    "text": "当您答应孩子一件事却临时有变，您通常：",
+    "options": [
+      { "label": "A. 向孩子说明原因并道歉，约定补偿", "score": 3 },
+      { "label": "B. 找理由推掉，孩子应该理解大人的难处", "score": 1 },
+      { "label": "C. 想办法兑现承诺，实在不行提前沟通", "score": 4 },
+      { "label": "D. 用其他事情补偿，但不解释", "score": 2 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+  {
+    "id": "Q5",
+    "text": "当家庭事务需要决定时，孩子是否有参与感？",
+    "options": [
+      { "label": "A. 偶尔听听孩子的想法", "score": 2 },
+      { "label": "B. 部分参与，但最终还是大人决定", "score": 3 },
+      { "label": "C. 从不，孩子不懂这些", "score": 1 },
+      { "label": "D. 经常参与讨论并尊重他的意见", "score": 4 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+  {
+    "id": "Q6",
+    "text": "当家庭规则需要制定时，通常：",
+    "options": [
+      { "label": "A. 商量后由父母最终决定", "score": 3 },
+      { "label": "B. 父母说了算，孩子必须听", "score": 1 },
+      { "label": "C. 临时决定，看情况执行", "score": 2 },
+      { "label": "D. 共同制定并一起遵守", "score": 4 }
+    ],
+    "dimension": "家庭责任",
+    "reverse": false
+  },
+
+  {
+    "id": "Q7",
+    "text": "当您在育儿中犯错（如错怪孩子、情绪失控）时：",
+    "options": [
+      { "label": "A. 偶尔会承认，但比较少", "score": 2 },
+      { "label": "B. 会主动向孩子道歉并讨论如何改进", "score": 4 },
+      { "label": "C. 很少承认，觉得会失去权威", "score": 1 },
+      { "label": "D. 事后会反思，但不一定说出来", "score": 3 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+  {
+    "id": "Q8",
+    "text": "您是否会在孩子面前展示\"我也在学习成长\"？",
+    "options": [
+      { "label": "A. 几乎不会，我是家长要树立形象", "score": 1 },
+      { "label": "B. 孩子知道我在学习，但我们很少讨论", "score": 3 },
+      { "label": "C. 经常分享我的学习和困惑，和孩子共同成长", "score": 4 },
+      { "label": "D. 偶尔会说，但不太主动", "score": 2 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+  {
+    "id": "Q9",
+    "text": "关于孩子的承诺和责任（如作业、约定的家务），您：",
+    "options": [
+      { "label": "A. 会提醒几次，最后可能帮他完成", "score": 1 },
+      { "label": "B. 提醒但不替代，让他承担自然后果", "score": 3 },
+      { "label": "C. 提前和孩子约定后果，让他自己承担", "score": 4 },
+      { "label": "D. 要求必须完成，否则惩罚", "score": 2 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+  {
+    "id": "Q10",
+    "text": "您是否认同\"先成人，后成才\"并在日常中优先践行？",
+    "options": [
+      { "label": "A. 理解但很难做到，成绩压力太大", "score": 2 },
+      { "label": "B. 非常认同，品格培养排在学习成绩之前", "score": 4 },
+      { "label": "C. 觉得两者都重要，但不知道怎么平衡", "score": 3 },
+      { "label": "D. 不太认同，还是成绩更实际", "score": 1 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+  {
+    "id": "Q11",
+    "text": "您是否愿意为了孩子的长期发展，调整自己的观念和做法？",
+    "options": [
+      { "label": "A. 偶尔会调整，看情况", "score": 2 },
+      { "label": "B. 愿意改，但不知道从哪里开始", "score": 3 },
+      { "label": "C. 我的经验已经够用，不需要太多改变", "score": 1 },
+      { "label": "D. 持续学习育儿新理念，并尝试改变", "score": 4 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+  {
+    "id": "Q12",
+    "text": "当孩子学业压力极大、明显焦虑时，您是否敢于主动为孩子减负？",
+    "options": [
+      { "label": "A. 会和孩子商量，一起找平衡点", "score": 3 },
+      { "label": "B. 想减但不敢，担心影响成绩", "score": 2 },
+      { "label": "C. 会果断减少课外班或作业，保护孩子状态", "score": 4 },
+      { "label": "D. 认为\"现在不吃苦以后更苦\"，坚持高压", "score": 1 }
+    ],
+    "dimension": "成人",
+    "reverse": false
+  },
+
+  {
+    "id": "Q13",
+    "text": "您为孩子选择学习内容时，最看重：",
+    "options": [
+      { "label": "A. 是否对考试升学有帮助", "score": 1 },
+      { "label": "B. 是否能提升综合能力（思维、创造力等）", "score": 3 },
+      { "label": "C. 是否是当下热门的课程", "score": 2 },
+      { "label": "D. 是否符合孩子天赋和长期能力发展", "score": 4 }
+    ],
+    "dimension": "成才",
+    "reverse": false
+  },
+  {
+    "id": "Q14",
+    "text": "关于AI工具（如ChatGPT、Kimi等），您：",
+    "options": [
+      { "label": "A. 知道是趋势，但还没行动", "score": 2 },
+      { "label": "B. 听说过但不了解，也没给孩子用", "score": 1 },
+      { "label": "C. 偶尔让孩子用，但没系统引导", "score": 3 },
+      { "label": "D. 已经教孩子使用并培养\"AI协作能力\"", "score": 4 }
+    ],
+    "dimension": "成才",
+    "reverse": false
+  },
+  {
+    "id": "Q15",
+    "text": "当孩子遇到难题时，您更倾向：",
+    "options": [
+      { "label": "A. 和他一起查资料，共同解决", "score": 3 },
+      { "label": "B. 引导他思考方法，鼓励试错和探索", "score": 4 },
+      { "label": "C. 让他问老师或同学，不要总依赖我", "score": 2 },
+      { "label": "D. 直接告诉答案或方法，节省时间", "score": 1 }
+    ],
+    "dimension": "成才",
+    "reverse": false
+  },
+  {
+    "id": "Q16",
+    "text": "当孩子对某个\"无用\"的领域很感兴趣（如昆虫、动漫创作）时：",
+    "options": [
+      { "label": "A. 反对，应该把时间用在正事上", "score": 1 },
+      { "label": "B. 允许但限制时间，不能影响学习", "score": 2 },
+      { "label": "C. 支持深入探索，帮他找资源和导师", "score": 4 },
+      { "label": "D. 不干涉，让他自己玩，但也不提供支持", "score": 3 }
+    ],
+    "dimension": "成才",
+    "reverse": false
+  },
+  {
+    "id": "Q17",
+    "text": "您是否有意识培养孩子的\"信息辨别能力\"（批判性思维）？",
+    "options": [
+      { "label": "A. 偶尔会提醒他\"不要轻信网上的话\"", "score": 2 },
+      { "label": "B. 觉得重要，但不知道怎么教", "score": 3 },
+      { "label": "C. 经常和孩子讨论新闻、信息的真伪和逻辑", "score": 4 },
+      { "label": "D. 没想过要专门培养这个", "score": 1 }
+    ],
+    "dimension": "成才",
+    "reverse": false
+  },
+
+  {
+    "id": "Q18",
+    "text": "您是否认真思考过：AI和自动化会不会让孩子未来\"毕业即失业\"？",
+    "options": [
+      { "label": "A. 没想过，到时候再说", "score": 1 },
+      { "label": "B. 已经深入研究并开始针对性培养", "score": 4 },
+      { "label": "C. 偶尔听说，但不确定影响有多大", "score": 2 },
+      { "label": "D. 经常担心这个问题，正在学习对策", "score": 3 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q19",
+    "text": "您是否了解\"哪些能力AI难以替代\"（如创意、共情、复杂决策）？",
+    "options": [
+      { "label": "A. 听说过一些，但还没系统了解", "score": 2 },
+      { "label": "B. 不太清楚，希望能学习", "score": 3 },
+      { "label": "C. 没关注过", "score": 1 },
+      { "label": "D. 了解并已经开始培养这些能力", "score": 4 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q20",
+    "text": "关于孩子未来的职业方向，您目前：",
+    "options": [
+      { "label": "A. 在逐步探索，但还不清晰", "score": 3 },
+      { "label": "B. 完全没想过，太早了", "score": 1 },
+      { "label": "C. 已结合孩子天赋和时代趋势做了初步规划", "score": 4 },
+      { "label": "D. 有模糊想法（想让他当医生/老师等）", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q21",
+    "text": "您是否给孩子讲过\"钱是怎么来的\"（劳动、价值交换、投资等）？",
+    "options": [
+      { "label": "A. 简单讲过基本概念", "score": 3 },
+      { "label": "B. 没讲过，觉得孩子还小不用懂这些", "score": 1 },
+      { "label": "C. 偶尔提到，但没深入讨论", "score": 2 },
+      { "label": "D. 系统讲过并让孩子实践（如管理零花钱、小生意）", "score": 4 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q22",
+    "text": "孩子是否尝试过\"自己赚钱\"（卖闲置、做小项目、摆摊等）？",
+    "options": [
+      { "label": "A. 试过一两次，但没持续", "score": 3 },
+      { "label": "B. 没有，也不打算让他做", "score": 1 },
+      { "label": "C. 有过实践，我鼓励并提供支持", "score": 4 },
+      { "label": "D. 想让他试试，但还没行动", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+
+  {
+    "id": "Q23",
+    "text": "如果孩子未来选择的路不是\"名校+大公司/体制内\"，您会：",
+    "options": [
+      { "label": "A. 强烈反对，太冒险了", "score": 1 },
+      { "label": "B. 只要方向清晰、能创造价值就全力支持", "score": 4 },
+      { "label": "C. 先观察，如果真能谋生就接受", "score": 3 },
+      { "label": "D. 内心焦虑但会尊重他的选择", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q24",
+    "text": "您是否认同\"未来要培养创业者思维，而非打工者思维\"？",
+    "options": [
+      { "label": "A. 部分认同，但担心风险太大", "score": 2 },
+      { "label": "B. 不太认同，找份好工作更实际", "score": 1 },
+      { "label": "C. 非常认同并已经开始培养（如让孩子思考\"如何创造价值\"）", "score": 4 },
+      { "label": "D. 听起来有道理，但不知道怎么做", "score": 3 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q25",
+    "text": "您是否让孩子参与过真实的社会体验（实习、项目、创业尝试等）？",
+    "options": [
+      { "label": "A. 偶尔有机会会让他去", "score": 2 },
+      { "label": "B. 有意识安排，但不频繁", "score": 3 },
+      { "label": "C. 几乎没有，担心影响学习或不安全", "score": 1 },
+      { "label": "D. 系统性安排，每年都有", "score": 4 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q26",
+    "text": "您是否担心：孩子\"学历有了，但找不到真正出路\"？",
+    "options": [
+      { "label": "A. 经常思考这个问题，但还没有具体行动", "score": 3 },
+      { "label": "B. 不担心，考上好大学就行了", "score": 1 },
+      { "label": "C. 非常担心，已经提前规划多元能力培养", "score": 4 },
+      { "label": "D. 偶尔担心，但觉得好好学习应该没问题", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q27",
+    "text": "您是否已意识到：仅靠学业成绩，不足以支撑未来谋生？",
+    "options": [
+      { "label": "A. 认同，正在学习怎么调整", "score": 3 },
+      { "label": "B. 不认同，成绩好就能找到工作", "score": 1 },
+      { "label": "C. 部分认同，但还是觉得学习最重要", "score": 2 },
+      { "label": "D. 完全认同并已据此调整培养策略", "score": 4 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q28",
+    "text": "当孩子尝试赚钱项目失败时，您通常：",
+    "options": [
+      { "label": "A. 鼓励再试，但不提供具体指导", "score": 3 },
+      { "label": "B. 和他复盘经验，讨论下次如何改进", "score": 4 },
+      { "label": "C. 批评\"早说了不行，浪费时间\"", "score": 0 },
+      { "label": "D. 安慰他\"没关系\"，但不深入分析", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+  {
+    "id": "Q29",
+    "text": "您是否有意识引导孩子建立自己的\"数字作品集\"（个人博客/GitHub/B站频道等）？",
+    "options": [
+      { "label": "A. 知道重要性，正在规划", "score": 3 },
+      { "label": "B. 不了解，什么是数字作品集？", "score": 1 },
+      { "label": "C. 已经帮孩子建立", "score": 4 },
+      { "label": "D. 听说过这个概念，但还没行动", "score": 2 }
+    ],
+    "dimension": "谋生手段",
+    "reverse": false
+  },
+
+  {
+    "id": "Q30",
+    "text": "当孩子在某一方面明显擅长，但不符合主流评价标准时（如小众爱好）：",
+    "options": [
+      { "label": "A. 不太支持，还是要走主流道路", "score": 1 },
+      { "label": "B. 主动为这项优势寻找发展空间和资源", "score": 4 },
+      { "label": "C. 观察一段时间，看是不是三分钟热度", "score": 3 },
+      { "label": "D. 认可但暂不投入太多，先把成绩稳住", "score": 2 }
+    ],
+    "dimension": "成为自己",
+    "reverse": false
+  },
+  {
+    "id": "Q31",
+    "text": "您是否经常拿孩子和别人比较？",
+    "options": [
+      { "label": "A. 经常比较，希望孩子有动力", "score": 1 },
+      { "label": "B. 很少，更关注孩子自己的进步", "score": 4 },
+      { "label": "C. 不比较，但也不太表扬", "score": 3 },
+      { "label": "D. 偶尔会说\"你看XXX多厉害\"想激励他", "score": 2 }
+    ],
+    "dimension": "成为自己",
+    "reverse": false
+  },
+  {
+    "id": "Q32",
+    "text": "当孩子表达与您不同的观点时，您：",
+    "options": [
+      { "label": "A. 听听就好，坚持我的立场", "score": 2 },
+      { "label": "B. 立即纠正，孩子阅历浅不懂", "score": 1 },
+      { "label": "C. 引导他说明理由，但最终还是我决定", "score": 3 },
+      { "label": "D. 鼓励他完整表达并平等讨论", "score": 4 }
+    ],
+    "dimension": "成为自己",
+    "reverse": false
+  },
+  {
+    "id": "Q33",
+    "text": "您是否愿意陪孩子一起探索他的兴趣（即使你不懂）？",
+    "options": [
+      { "label": "A. 偶尔陪陪，主要还是让他自己玩", "score": 2 },
+      { "label": "B. 会持续投入时间和精力陪他研究", "score": 4 },
+      { "label": "C. 很少，我有自己的事", "score": 1 },
+      { "label": "D. 比较愿意，但不一定能坚持", "score": 3 }
+    ],
+    "dimension": "成为自己",
+    "reverse": false
+  },
+  {
+    "id": "Q34",
+    "text": "当孩子提出与主流价值观不同的想法时，您：",
+    "options": [
+      { "label": "A. 引导他理解主流观点的合理性", "score": 3 },
+      { "label": "B. 否定，不要标新立异", "score": 1 },
+      { "label": "C. 探讨他的逻辑，鼓励独立思考", "score": 4 },
+      { "label": "D. 解释为什么大家都这么想", "score": 2 }
+    ],
+    "dimension": "成为自己",
+    "reverse": false
+  },
+
+  {
+    "id": "Q35",
+    "text": "当孩子遇到挫折或失败时，您通常：",
+    "options": [
+      { "label": "A. 要求他振作，别想太多", "score": 2 },
+      { "label": "B. 帮他分析原因，给出建议", "score": 3 },
+      { "label": "C. 安慰说\"失败很正常\"，不深入讨论", "score": 1 },
+      { "label": "D. 陪他一起复盘原因并调整方法", "score": 4 }
+    ],
+    "dimension": "幸福力",
+    "reverse": false
+  },
+  {
+    "id": "Q36",
+    "text": "当孩子情绪激动（哭闹、发脾气）时，您：",
+    "options": [
+      { "label": "A. 等他平复后再沟通", "score": 3 },
+      { "label": "B. 先制止情绪，再讲道理", "score": 2 },
+      { "label": "C. 帮助他识别、理解和表达情绪，然后教方法", "score": 4 },
+      { "label": "D. 要求立刻冷静，\"不许哭\"", "score": 1 }
+    ],
+    "dimension": "幸福力",
+    "reverse": false
+  },
+  {
+    "id": "Q37",
+    "text": "当孩子想放弃一个困难任务时，您会：",
+    "options": [
+      { "label": "A. 随他，想放弃就放弃", "score": 1 },
+      { "label": "B. 分析原因，如果确实不适合就允许放弃", "score": 3 },
+      { "label": "C. 和他分析利弊后，重新调整路径或目标", "score": 4 },
+      { "label": "D. 要求必须坚持，\"不能半途而废\"", "score": 2 }
+    ],
+    "dimension": "幸福力",
+    "reverse": false
+  },
+  {
+    "id": "Q38",
+    "text": "您是否认为\"家庭氛围会深刻影响孩子一生\"？",
+    "options": [
+      { "label": "A. 有一定影响", "score": 2 },
+      { "label": "B. 是决定性因素，所以我很注重营造", "score": 4 },
+      { "label": "C. 不太相关，主要还是看孩子自己", "score": 1 },
+      { "label": "D. 很重要，但我不太知道怎么营造", "score": 3 }
+    ],
+    "dimension": "幸福力",
+    "reverse": false
+  }
+]
