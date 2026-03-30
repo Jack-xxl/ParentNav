@@ -41,7 +41,7 @@
       <div style="margin-bottom:32px">
         <div style="display:flex;justify-content:space-between;margin-bottom:8px">
           <span style="font-size:11px;color:#ccc;letter-spacing:3px;text-transform:uppercase">{{ sec?.label }} · {{ sec?.title }}</span>
-          <span style="font-size:12px;color:#d0ccc6">{{ currentQ + 1 }} / {{ questions.length }}</span>
+          <span style="font-size:12px;color:#d0ccc6">{{ currentQ + 1 }} / {{ shuffledQuestions.length }}</span>
         </div>
         <div style="height:2px;background:rgba(255,255,255,.08);border-radius:1px">
           <div :style="{ height:'100%', background: sec?.accent || '#c0392b', width: progressPct + '%', transition:'width .4s ease', borderRadius:'1px' }" />
@@ -108,7 +108,7 @@
 
       <button v-if="selected" @click="handleNext" class="next-btn"
         :style="{ background: sec?.accent || '#c0392b', color:'#fff', border:'none', borderRadius:'4px', padding:'14px 36px', fontSize:'15px', cursor:'pointer', fontFamily:'inherit', animation:'fadeUp .3s ease' }">
-        {{ currentQ + 1 >= questions.length ? '查看我孩子的2035年画像 →' : '下一题 →' }}
+        {{ currentQ + 1 >= shuffledQuestions.length ? '查看我孩子的2035年画像 →' : '下一题 →' }}
       </button>
     </div>
 
@@ -119,7 +119,7 @@
       <!-- tagline -->
       <div style="background:rgba(255,255,255,.04);border-left:3px solid #e8c97a;padding:14px 18px;margin-bottom:32px;border-radius:0 6px 6px 0">
         <p style="font-size:14px;line-height:1.85;color:#ddd8d0;margin:0;font-style:italic">
-          这不是给孩子打分，而是在判断：<strong style="color:#e8c97a">你的教育路径，能不能让孩子在AI时代独立生存下来。</strong>
+          这不是给孩子打分，而是在判断：<strong style="color:#e8c97a">你的教育路径，能不能让孩子在AI时代真正独立立足。</strong>
         </p>
       </div>
 
@@ -281,7 +281,7 @@ import { ref, computed, watch } from 'vue'
 const questions = [
   { id:1, section:1, axis:'monitoring', question:'你每天会问孩子「作业做完没？今天考了多少分？」吗？', options:[{label:'A',text:'每天都问，这是关心的表现',score:0},{label:'B',text:'经常问，但不是每天',score:1},{label:'C',text:'偶尔问，主要看孩子状态',score:3},{label:'D',text:'很少问，我更关注他的状态和想法',score:4}], revealTitle:'你盯住的是结果，却可能丢掉了发动机', reveal:'每日成绩追问是孩子为你学习、而不是为自己学习的最大推手。被高频监控成绩的孩子，失去外部监督的第一年崩溃率是其他孩子的3倍。你越问，孩子越空心。' },
   { id:2, section:1, axis:'oldMap', question:'你为孩子规划好了升学路径吗？（初中→重点高中→985→考公/大厂）', options:[{label:'A',text:'非常清晰，已经规划好了',score:0},{label:'B',text:'大方向有，细节还没定',score:1},{label:'C',text:'有想法，但尊重孩子意见',score:3},{label:'D',text:'没有固定规划，保持开放随时调整',score:4}], revealTitle:'你拿着一张2010年的地图，给孩子导航2035年', reveal:'你的规划基于一个正在消失的世界。大厂裁员潮中受冲击最大的，恰恰是「按路径走」的名校毕业生。你规划得越清晰，孩子撞墙就越疼——因为那堵墙，你根本没见过。' },
-  { id:3, section:1, axis:'aiReadiness', question:'孩子用AI工具（ChatGPT / Kimi / 文心）写作业，你怎么看？', options:[{label:'A',text:'坚决禁止，这是作弊，影响基础',score:0},{label:'B',text:'不太支持，担心影响独立思考',score:1},{label:'C',text:'允许，但要求自己先独立思考',score:3},{label:'D',text:'鼓励，并教他如何更高效地使用',score:4}], revealTitle:'你禁止的，是他未来的基础生存技能', reveal:'2035年的职场，AI协作能力是入场门槛，不是加分项。禁止孩子用AI，相当于1995年禁止孩子用计算器。会用AI的人，将管理不会用AI的人。' },
+  { id:3, section:1, axis:'aiReadiness', question:'孩子用AI工具（ChatGPT / Kimi / 文心）写作业，你怎么看？', options:[{label:'A',text:'坚决禁止，这是作弊，影响基础',score:0},{label:'B',text:'不太支持，担心影响独立思考',score:1},{label:'C',text:'允许，但要求自己先独立思考',score:3},{label:'D',text:'鼓励，并教他如何更高效地使用',score:4}], revealTitle:'你禁止的，是他未来的核心立足技能', reveal:'2035年的职场，AI协作能力是入场门槛，不是加分项。禁止孩子用AI，相当于1995年禁止孩子用计算器。会用AI的人，将管理不会用AI的人。' },
   { id:4, section:1, axis:'drive', question:'孩子成绩中等，但对做视频/写代码/做生意非常着迷。你的态度？', options:[{label:'A',text:'先把成绩搞上去，其他都是玩',score:0},{label:'B',text:'可以玩，但不能耽误学习',score:1},{label:'C',text:'认真了解他在做什么，评估潜力',score:3},{label:'D',text:'积极支持，帮他找资源和导师',score:4}], revealTitle:'你正在扑灭AI时代最稀缺的东西——真实驱动力', reveal:'你描述的那个孩子，在AI时代是稀缺品——他有真实的驱动力，有具体的方向感。「先把成绩搞上去」可能正在扑灭一个创造者的火苗。内驱力一旦被系统性压制，很难复燃。' },
   { id:5, section:1, axis:'stabilityIllusion', question:'如果孩子考进了体制内（公务员/教师编/国企），你会松一口气，觉得「终于稳了」吗？', options:[{label:'A',text:'会，这正是我最希望的结果',score:0},{label:'B',text:'基本满意，至少有保障',score:1},{label:'C',text:'稳定是好事，但我也希望他有其他能力',score:3},{label:'D',text:'不会，稳定从来不是终点，只是起点之一',score:4}], revealTitle:'上一代人也以为铁饭碗是铁的', reveal:'1990年代，数千万国企工人在中年失业——他们进厂时，没有一个人相信这会发生。今天，AI正在对公务员、教师、医生、律师做同样的事。财政收入持续收缩，体制编制只会越来越少。「稳定」不是终点，是起跑线。如果孩子只有一张入场券，没有持续创造价值的能力，那张券失效的那天，他拿什么重新开始？' },
   { id:6, section:2, axis:'agency', question:'孩子放学后有两小时自由时间。你通常怎么安排？', options:[{label:'A',text:'报了补习班/兴趣班，时间基本排满',score:0},{label:'B',text:'让他自己选，但会建议方向',score:2},{label:'C',text:'完全自主，他想做什么做什么',score:3},{label:'D',text:'和他一起讨论，帮他建立自己的计划',score:4}], zhangmo:'课余被排满，成绩稳定。但25岁的张默，在某公司做基础数据分析，月薪9000元。他能完成任务，但从不主动。他从来没有学会「自己决定做什么」——因为从来没人给他练习的机会。', linchen:'那两小时试过很多事，多数没坚持。但有一件事坚持了三年。25岁的林晨，那件事成了他的第一个产品。没有人规定他做，所以他做了；没有人替他负责，所以他认真了。' },
@@ -328,10 +328,10 @@ const axisLabels = {
 }
 
 const verdictLevels = [
-  { range:[0,28], label:'极度危险', tag:'你孩子的2035年画像', title:'当前路径下，孩子在AI时代建立稳定生存能力的概率极低', color:'#8b0000', survivalLabel:'生存能力极度不足', survivalColor:'#c0392b', survivalDesc:'满分120分，当前分数区间（0–28分）意味着：孩子正在建立的能力结构，在AI替代浪潮下几乎没有抵御能力。这不是孩子的问题——是路径选错了。', reversible:'⚠️ 但这是可以改变的。路径调整越早，代价越小。大多数家庭通过系统性决策重构，可在6–12个月内完成跨档跃迁。', mustDo:'立即停止当前路径，重新评估整体教育方向', portrait:['2035年，他很努力，但方向从一开始就错了。他可能考进了一个「看起来安全」的赛道，却不知道那条赛道正在被AI系统性替代。','他有文凭，有证书，但缺少在环境变化时重新找到方向的能力。行业一旦收缩，他会发现自己没有备用的路——因为没有人在他最关键的成长期，训练过这件事。','最危险的不是他不够聪明，而是他不知道自己缺什么。'], losses:['孩子当前路径在AI时代的生存稳定性极低','内驱力与创造力的关键窗口期正在关闭','大量教育资源被投入正在加速贬值的方向'], cta:'窗口还没彻底关闭，但正在关闭。现在最关键的不是补更多课，而是重建整个决策系统。' },
-  { range:[29,52], label:'高风险', tag:'你孩子的2035年画像', title:'生存稳定性极低——行业一旦波动，孩子极可能成为第一批出局的人', color:'#c0392b', survivalLabel:'生存能力严重不足', survivalColor:'#e74c3c', survivalDesc:'满分120分，当前分数区间（29–52分）意味着：孩子具备一定基础，但在AI替代趋势下，这点基础不足以抵御真实的职业冲击。', reversible:'📌 这是可以改变的。你已经有一定基础，方向调整的成本相对可控。6–12个月的系统性路径修正，可以显著提升孩子的生存稳定性。', mustDo:'调整核心方向，补齐关键能力——越快越好', portrait:['2035年，他能找到工作，但他的岗位处于AI替代的高风险区。他做的事，机器做得更快、更便宜。他的价值，正在以他看不见的方式贬值。','他不是坏孩子，也不是懒孩子。他只是用了一套在旧时代有效、在新时代失效的生存逻辑。而这套逻辑，是你一步步帮他建立的。','35岁，他可能第一次意识到：他一直在努力，但努力的方向，从一开始就错了。'], losses:['孩子缺乏真正可迁移的核心能力','当前教育投资结构重仓了正在贬值的方向','孩子内驱力和项目经验的建立严重滞后'], cta:'你的孩子还有机会，但窗口正在收窄。现在不是微调的时候，是系统性重建的时候。' },
-  { range:[53,75], label:'警戒线', tag:'你孩子的2035年画像', title:'勉强能活，但经不起任何冲击——没有真正的安全边界', color:'#d35400', survivalLabel:'生存能力薄弱，随时可能失守', survivalColor:'#e67e22', survivalDesc:'满分120分，当前分数区间（53–75分）意味着：孩子在风平浪静时可以生存，但一旦所在行业受到AI冲击，极可能成为第一批被替代的人。', reversible:'📌 好消息是：你已经做对了一部分事情。这个分数区间的家庭，通过精准的路径优化，往往是提升最快的一组。', mustDo:'优化路径结构，重点补齐最薄弱的3个维度', portrait:['2035年，他在求职市场上处于高压区——既要面对AI系统的直接替代，又要面对大量同水平竞争者的挤压。他不一定找不到工作，但很可能长期处于「勉强维持」的状态。','他在30多岁可能感受到一种无力感：比上面的人努力，收入却在下滑；比下面的人资历深，却又不如AI高效。没有差异化的武器，就只能在夹缝里消耗。','这种处境，不是突然发生的——它在今天一个个教育决策里，就已经悄悄写好了。'], losses:['孩子处于「够用但不稀缺」的高危区间','缺乏真实项目经验，职场适应成本极高','能力结构过于标准化，差异化竞争力不足'], cta:'你的基础不差，这恰恰是最危险的地方——容易以为安全，却在不知不觉中被超越。' },
-  { range:[76,95], label:'基础谋生 ✅', tag:'你孩子的2035年画像', title:'能活，但没有安全边界——仍处于可替代风险的边缘', color:'#27ae60', survivalLabel:'✅ 具备基础谋生能力，仍在可替代边缘', survivalColor:'#2ecc71', survivalDesc:'满分120分，当前分数区间（76–95分）是本测评中首个「可谋生」档位。孩子具备基本生存能力——这已好过大多数家庭，但「能活」不等于「有安全边界」。', reversible:'📌 你已经做对了很多事。现在的关键不是从头开始，而是把现有优势系统化、放大化，真正建立不可替代的竞争壁垒。', mustDo:'放大现有优势，从「能活」升级到「不可替代」', portrait:['2035年，他在就业市场上有一定竞争力，但「有竞争力」不等于「能找到好工作」。在AI大量替代的就业环境下，这个分数段的孩子仍面临真实的就业压力。','他比大多数人做了更多正确的事，但「正确」的标准也在快速抬高。他更可能成为「驾驭AI的那个人」——但这需要持续维护，不是一劳永逸。','现实是：即便到了这个分数，孩子依然没有真正的安全边界。这不是在否定你，而是在告诉你还剩多少路要走。'], losses:['从「基础谋生」到「真正不可替代」之间，还有一道必须跨越的坎','能力优势尚未系统化，在激烈竞争中容易被后来者追平','家庭资源还可以更精准地投向高杠杆位置'], cta:'你已经做对了很多。但在AI时代，「够用」是最危险的状态——因为「够用」的标准每年都在升高。' },
+  { range:[0,28], label:'极度危险', tag:'你孩子的2035年画像', title:'当前路径下，孩子在AI时代建立稳定谋生能力的概率极低', color:'#8b0000', survivalLabel:'谋生能力极度不足', survivalColor:'#c0392b', survivalDesc:'满分120分，当前分数区间（0–28分）意味着：孩子正在建立的能力结构，在AI替代浪潮下几乎没有抵御能力。这不是孩子的问题——是路径选错了。', reversible:'⚠️ 但这是可以改变的。路径调整越早，代价越小。大多数家庭通过系统性决策重构，可在6–12个月内完成跨档跃迁。', mustDo:'立即停止当前路径，重新评估整体教育方向', portrait:['2035年，他很努力，但方向从一开始就错了。他可能考进了一个「看起来安全」的赛道，却不知道那条赛道正在被AI系统性替代。','他有文凭，有证书，但缺少在环境变化时重新找到方向的能力。行业一旦收缩，他会发现自己没有备用的路——因为没有人在他最关键的成长期，训练过这件事。','最危险的不是他不够聪明，而是他不知道自己缺什么。'], losses:['孩子当前路径在AI时代的立足稳定性极低','内驱力与创造力的关键窗口期正在关闭','大量教育资源被投入正在加速贬值的方向'], cta:'窗口还没彻底关闭，但正在关闭。现在最关键的不是补更多课，而是重建整个决策系统。' },
+  { range:[29,52], label:'高风险', tag:'你孩子的2035年画像', title:'立足稳定性极低——行业一旦波动，孩子极可能成为第一批出局的人', color:'#c0392b', survivalLabel:'谋生能力严重不足', survivalColor:'#e74c3c', survivalDesc:'满分120分，当前分数区间（29–52分）意味着：孩子具备一定基础，但在AI替代趋势下，这点基础不足以抵御真实的职业冲击。', reversible:'📌 这是可以改变的。你已经有一定基础，方向调整的成本相对可控。6–12个月的系统性路径修正，可以显著提升孩子的立足稳定性。', mustDo:'调整核心方向，补齐关键能力——越快越好', portrait:['2035年，他能找到工作，但他的岗位处于AI替代的高风险区。他做的事，机器做得更快、更便宜。他的价值，正在以他看不见的方式贬值。','他不是坏孩子，也不是懒孩子。他只是用了一套在旧时代有效、在新时代失效的立足逻辑。而这套逻辑，是你一步步帮他建立的。','35岁，他可能第一次意识到：他一直在努力，但努力的方向，从一开始就错了。'], losses:['孩子缺乏真正可迁移的核心能力','当前教育投资结构重仓了正在贬值的方向','孩子内驱力和项目经验的建立严重滞后'], cta:'你的孩子还有机会，但窗口正在收窄。现在不是微调的时候，是系统性重建的时候。' },
+  { range:[53,75], label:'警戒线', tag:'你孩子的2035年画像', title:'勉强维系生计，随时面临失守风险——没有真正的安全边界', color:'#d35400', survivalLabel:'谋生能力薄弱，随时面临失守', survivalColor:'#e67e22', survivalDesc:'满分120分，当前分数区间（53–75分）意味着：孩子在风平浪静时尚能维持，但一旦所在行业受到AI冲击，极可能成为第一批被替代的人。', reversible:'📌 好消息是：你已经做对了一部分事情。这个分数区间的家庭，通过精准的路径优化，往往是提升最快的一组。', mustDo:'优化路径结构，重点补齐最薄弱的3个维度', portrait:['2035年，他在求职市场上处于高压区——既要面对AI系统的直接替代，又要面对大量同水平竞争者的挤压。他不一定找不到工作，但很可能长期处于「勉强维系生计」的状态。','他在30多岁可能感受到一种无力感：比上面的人努力，收入却在下滑；比下面的人资历深，却又不如AI高效。没有差异化的武器，就只能在夹缝里消耗。','这种处境，不是突然发生的——它在今天一个个教育决策里，就已经悄悄写好了。'], losses:['孩子处于「够用但不稀缺」的高危区间','缺乏真实项目经验，职场适应成本极高','能力结构过于标准化，差异化竞争力不足'], cta:'你的基础不差，这恰恰是最危险的地方——容易以为安全，却在不知不觉中被超越。' },
+  { range:[76,95], label:'基础谋生 ✅', tag:'你孩子的2035年画像', title:'具备独立谋生能力，但尚无真正的安全边界——仍处于可替代风险的边缘', color:'#27ae60', survivalLabel:'✅ 具备基础谋生能力，仍在可替代边缘', survivalColor:'#2ecc71', survivalDesc:'满分120分，当前分数区间（76–95分）是本测评中首个「可谋生」档位。孩子具备基本谋生能力——这已好过大多数家庭，但「独立谋生」不等于「拥有安全边界」。', reversible:'📌 你已经做对了很多事。现在的关键不是从头开始，而是把现有优势系统化、放大化，真正建立不可替代的竞争壁垒。', mustDo:'放大现有优势，从「独立谋生」升级到「真正不可替代」', portrait:['2035年，他在就业市场上有一定竞争力，但「有竞争力」不等于「能找到好工作」。在AI大量替代的就业环境下，这个分数段的孩子仍面临真实的就业压力。','他比大多数人做了更多正确的事，但「正确」的标准也在快速抬高。他更可能成为「驾驭AI的那个人」——但这需要持续维护，不是一劳永逸。','现实是：即便到了这个分数，孩子依然没有真正的安全边界。这不是在否定你，而是在告诉你还剩多少路要走。'], losses:['从「基础谋生」到「真正不可替代」之间，还有一道必须跨越的坎','能力优势尚未系统化，在激烈竞争中容易被后来者追平','家庭资源还可以更精准地投向高杠杆位置'], cta:'你已经做对了很多。但在AI时代，「够用」是最危险的状态——因为「够用」的标准每年都在升高。' },
   { range:[96,120], label:'跃迁潜力 ✅', tag:'你孩子的2035年画像', title:'具备跨时代迁移能力——窗口期需要立即放大', color:'#f39c12', survivalLabel:'✅ 具备跨时代迁移能力', survivalColor:'#f1c40f', survivalDesc:'满分120分，当前分数区间（96–120分）意味着：孩子正在建立真正稀缺的核心能力，具备在任何环境下重新创造价值的底层系统——这是AI时代最贵的资产。', reversible:'🚀 你已经站在正确的位置上。现在最关键的事：立即进行路径放大——先行者的优势窗口，不等人。', mustDo:'立即放大路径优势，抢占窗口——先行者红利正在计时', portrait:['2035年，他不只靠一份岗位定义自己。他靠能力、项目、判断力和网络持续创造价值——在任何环境下。','当AI替代浪潮席卷他所在的行业，他不会想着保住位置，他会思考如何成为重组资源、定义新规则的那个人。','你给他最贵的礼物，不是某个稳定职位，而是一套在任何时代都能重新启动的底层能力系统。'], losses:['先行者优势的窗口期正在快速收窄，需要立即放大','高水平的优势如果不系统化，会随时间自然稀释','孩子的路径还需要更精准的赛道校准和资源匹配'], cta:'你已经不在普通教育思维里了。下一步，是把优势系统化，真正把孩子送入跃迁轨道——窗口期不等人。' },
 ]
 
@@ -348,12 +348,12 @@ const showSectionBanner = ref(false)
 
 // ─── COMPUTED ────────────────────────────────────────────────────────────────
 
-const q = computed(() => questions[currentQ.value])
+const q = computed(() => shuffledQuestions.value[currentQ.value])
 const sec = computed(() => q.value ? sectionMeta[q.value.section] : null)
 const isNewSection = computed(() =>
-  currentQ.value === 0 || questions[currentQ.value - 1]?.section !== q.value?.section
+  currentQ.value === 0 || shuffledQuestions.value[currentQ.value - 1]?.section !== q.value?.section
 )
-const progressPct = computed(() => Math.round(((currentQ.value + 1) / questions.length) * 100))
+const progressPct = computed(() => Math.round(((currentQ.value + 1) / shuffledQuestions.value.length) * 100))
 
 const verdict = computed(() =>
   verdictLevels.find(v => totalScore.value >= v.range[0] && totalScore.value <= v.range[1]) || verdictLevels[0]
@@ -422,7 +422,26 @@ watch(currentQ, () => {
   }
 })
 
+const shuffledQuestions = ref([])
+
+function shuffleArray(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 function startQuiz() {
+  // shuffle options for each question, reassign A/B/C/D labels
+  shuffledQuestions.value = questions.map(q => ({
+    ...q,
+    options: shuffleArray(q.options).map((opt, i) => ({
+      ...opt,
+      label: ['A','B','C','D'][i]
+    }))
+  }))
   fadeIn.value = false
   setTimeout(() => { phase.value = 'quiz'; fadeIn.value = true }, 250)
 }
@@ -440,7 +459,7 @@ function handleNext() {
     answerRecords.value = nextRecords
     showReveal.value = false
     selected.value = null
-    if (currentQ.value + 1 >= questions.length) {
+    if (currentQ.value + 1 >= shuffledQuestions.value.length) {
       totalScore.value = nextRecords.reduce((s, r) => s + r.score, 0)
       phase.value = 'result'
     } else {
@@ -458,6 +477,7 @@ function resetAll() {
   answerRecords.value = []
   totalScore.value = 0
   fadeIn.value = true
+  shuffledQuestions.value = []
 }
 </script>
 
