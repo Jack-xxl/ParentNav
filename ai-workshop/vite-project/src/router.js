@@ -1,7 +1,6 @@
 // src/router.js
 import { createRouter, createWebHistory } from "vue-router";
 
-import Login from "./pages/Login.vue";
 import Register from "./pages/Register.vue";
 
 import Home from "./pages/Home.vue";
@@ -34,7 +33,8 @@ import WordTrainer from "./pages/WordTrainer.vue";
 import Playground from "./pages/Playground.vue";
 
 const routes = [
-  { path: "/login", component: Login },
+  // 不再需要登录校验，直接进入应用
+  { path: "/login", redirect: "/" },
   { path: "/register", component: Register },
 
   { path: "/", component: Home },
