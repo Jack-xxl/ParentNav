@@ -1,6 +1,0 @@
-{
-  "installCommand": "npm --prefix ai-workshop/vite-project install",
-  "buildCommand": "npm --prefix ai-workshop/vite-project run build",
-  "outputDirectory": "ai-workshop/vite-project/dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
