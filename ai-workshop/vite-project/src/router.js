@@ -13,6 +13,9 @@ import Trial from "./pages/Trial.vue";
 import About from "./pages/About.vue";
 import AskAi from "./pages/AskAi.vue";
 
+// 👉 英语项目总入口
+import EnglishHome from "./pages/EnglishHome.vue";
+
 // 👉 AI 创变营相关
 import CreatorHub from "./pages/CreatorHub.vue";          // AI 智能体创造中心（项目选择）
 import ProjectCreate from "./pages/ProjectCreate.vue";    // 创建具体项目
@@ -32,20 +35,78 @@ import WordTrainer from "./pages/WordTrainer.vue";
 // 👉 学习版 Playground（孩子可以改代码）
 import Playground from "./pages/Playground.vue";
 
+
 const routes = [
   // 不再需要登录校验，直接进入应用
-  { path: "/login", redirect: "/" },
-  { path: "/register", component: Register },
+  {
+    path: "/login",
+    redirect: "/",
+  },
 
-  { path: "/", component: Home },
-  { path: "/faq", component: Faq },
-  { path: "/courses", component: Courses },
-  { path: "/showcase", component: Showcase },
-  { path: "/incubation", component: Incubation },
-  { path: "/signup", component: Signup },
-  { path: "/trial", component: Trial },
-  { path: "/about", component: About },
-  { path: "/ai-ask", component: AskAi },
+  {
+    path: "/register",
+    component: Register,
+  },
+
+  // 首页
+  {
+    path: "/",
+    component: Home,
+  },
+
+  // =====================================================
+  // 👉 GoGlobal English｜AI 实境英语
+  // =====================================================
+  {
+    path: "/english",
+    name: "EnglishHome",
+    component: EnglishHome,
+  },
+
+  // 普通页面
+  {
+    path: "/faq",
+    component: Faq,
+  },
+
+  {
+    path: "/courses",
+    component: Courses,
+  },
+
+  {
+    path: "/showcase",
+    component: Showcase,
+  },
+
+  {
+    path: "/incubation",
+    component: Incubation,
+  },
+
+  {
+    path: "/signup",
+    component: Signup,
+  },
+
+  {
+    path: "/trial",
+    component: Trial,
+  },
+
+  {
+    path: "/about",
+    component: About,
+  },
+
+  {
+    path: "/ai-ask",
+    component: AskAi,
+  },
+
+  // =====================================================
+  // 👉 AI 创变营
+  // =====================================================
 
   // AI 智能体创造中心
   {
@@ -75,6 +136,10 @@ const routes = [
     component: ProjectDetail,
   },
 
+  // =====================================================
+  // 👉 AI 学习工具
+  // =====================================================
+
   // 学习型 AI 助手：听说读写 + 错题本
   {
     path: "/study-agent",
@@ -88,6 +153,10 @@ const routes = [
     name: "AgentBuilder",
     component: AgentBuilder,
   },
+
+  // =====================================================
+  // 👉 GoGlobal English · AI 单词机
+  // =====================================================
 
   // AI 单词机：配置向导
   {
@@ -103,13 +172,14 @@ const routes = [
     component: WordTrainer,
   },
 
-  // 学习版 Playground
+  // AI English Lab / 学习版 Playground
   {
     path: "/playground",
     name: "Playground",
     component: Playground,
   },
 ];
+
 
 const router = createRouter({
   history: createWebHistory(),
